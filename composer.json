@@ -40,9 +40,16 @@
         "check-style": "phpcs src tests",
         "fix-style": "phpcbf src tests"
     },
+    "suggest": {
+        "yuca/singleton-container": "Allows caching and reuse of transformers."
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "thanks": {
+            "name": "thecodingmachine/alias-container",
+            "url": "https://github.com/thecodingmachine/alias-container"
         }
     },
     "config": {

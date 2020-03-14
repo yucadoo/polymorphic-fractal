@@ -63,7 +63,7 @@ $resource = new Collection($objects, $polymorphicTransformer);
 $manager->createData($resource)->toArray();
 ```
 As shown in the example above the class of the transformation data is used to get the transformer from the transformer registry. This behvaiour can be modified by overriding the `getRegistryKey()` method.
-```
+``` php
 use Mouf\AliasContainer\AliasContainer;
 use Yuca\PolymorphicFractal\Transformer as PolymorphicTransformer;
 
@@ -96,6 +96,10 @@ $notifications = array(
 );
 $resource = new Collection($notifications, $notificationTransformer);
 ```
+
+### Pro tip
+
+To prevent repeated instantiation of the same transformer wrap your framework's IoC cointainer with the `SingletonContainer` decorator provided by the [yuca/singleton-container package](link-singleton-container) before passing it into the `AliasContainer`.
 
 ## Change log
 
@@ -137,4 +141,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-code-quality]: https://scrutinizer-ci.com/g/yuca/polymorphic-fractal
 [link-downloads]: https://packagist.org/packages/yuca/polymorphic-fractal
 [link-author]: https://github.com/yuca
+[link-singleton-container]: https://github.com/yuca/singleton-container
 [link-contributors]: ../../contributors
