@@ -4,7 +4,10 @@
     "description": "Polymorphic Transformer implementation for PHP League's Fractal package.",
     "keywords": [
         "yuca",
-        "polymorphic-fractal"
+        "fractal",
+        "polymorphic",
+        "api",
+        "transform"
     ],
     "homepage": "https://github.com/yuca/polymorphic-fractal",
     "license": "MIT",
