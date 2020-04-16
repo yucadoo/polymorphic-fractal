@@ -69,16 +69,16 @@ use YucaDoo\PolymorphicFractal\Transformer as PolymorphicTransformer;
 
 class NotificationTransformer extends PolymorphicTransformer
 {
-	public function __construct(AliasContainer $registry)
-	{
-	    parent::__construct($registry);
-	    $registry->alias('like', LikeTransformer::class);
-	    $registry->alias('comment', CommentTransformer::class);
+    public function __construct(AliasContainer $registry)
+    {
+        parent::__construct($registry);
+        $registry->alias('like', LikeTransformer::class);
+        $registry->alias('comment', CommentTransformer::class);
     }
 
-	protected function getRegistryKey($data)
-	{
-	    return $data['type'];
+    protected function getRegistryKey($data)
+    {
+        return $data['type'];
     }
 }
 
