@@ -1,5 +1,5 @@
 {
-    "name": "yuca/polymorphic-fractal",
+    "name": "yucadoo/polymorphic-fractal",
     "type": "library",
     "description": "Polymorphic Transformer implementation for PHP League's Fractal package.",
     "keywords": [
@@ -9,13 +9,13 @@
         "api",
         "transform"
     ],
-    "homepage": "https://github.com/yuca/polymorphic-fractal",
+    "homepage": "https://github.com/yucadoo/polymorphic-fractal",
     "license": "MIT",
     "authors": [
         {
             "name": "Hrvoje Jukic",
             "email": "hrcajuka@gmail.com",
-            "homepage": "https://github.com/yuca",
+            "homepage": "https://github.com/yucadoo",
             "role": "Developer"
         }
     ],
@@ -30,12 +30,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Yuca\\PolymorphicFractal\\": "src"
+            "YucaDoo\\PolymorphicFractal\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Yuca\\PolymorphicFractal\\": "tests"
+            "YucaDoo\\PolymorphicFractal\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +44,7 @@
         "fix-style": "phpcbf src tests"
     },
     "suggest": {
-        "yuca/singleton-container": "Allows caching and reuse of transformers."
+        "yucadoo/singleton-container": "Allows caching and reuse of transformers."
     },
     "extra": {
         "branch-alias": {

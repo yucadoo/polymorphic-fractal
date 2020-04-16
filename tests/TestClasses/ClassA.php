@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yuca\PolymorphicFractal\TestClasses;
+namespace YucaDoo\PolymorphicFractal\TestClasses;
 
 class ClassA
 {

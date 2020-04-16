@@ -22,7 +22,7 @@ please send a patch via pull request.
 Via Composer
 
 ``` bash
-$ composer require yuca/polymorphic-fractal
+$ composer require yucadoo/polymorphic-fractal
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ $ composer require yuca/polymorphic-fractal
 use League\Fractal\Manager;
 use League\Fractal\Resource\Collection;
 use Mouf\AliasContainer\AliasContainer;
-use Yuca\PolymorphicFractal\Transformer as PolymorphicTransformer;
+use YucaDoo\PolymorphicFractal\Transformer as PolymorphicTransformer;
 
 // Get heterogeneous data
 $objects = array(
@@ -65,7 +65,7 @@ $manager->createData($resource)->toArray();
 As shown in the example above the class of the transformation data is used to get the transformer from the transformer registry. This behvaiour can be modified by overriding the `getRegistryKey()` method.
 ``` php
 use Mouf\AliasContainer\AliasContainer;
-use Yuca\PolymorphicFractal\Transformer as PolymorphicTransformer;
+use YucaDoo\PolymorphicFractal\Transformer as PolymorphicTransformer;
 
 class NotificationTransformer extends PolymorphicTransformer
 {
@@ -99,7 +99,7 @@ $resource = new Collection($notifications, $notificationTransformer);
 
 ### Pro tip
 
-To prevent repeated instantiation of the same transformer wrap your framework's IoC cointainer with the `SingletonContainer` decorator provided by the [yuca/singleton-container package](link-singleton-container) before passing it into the `AliasContainer`.
+To prevent repeated instantiation of the same transformer wrap your framework's IoC cointainer with the `SingletonContainer` decorator provided by the [yucadoo/singleton-container package](link-singleton-container) before passing it into the `AliasContainer`.
 
 ## Change log
 
@@ -128,18 +128,18 @@ If you discover any security related issues, please email hrcajuka@gmail.com ins
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/yuca/polymorphic-fractal.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/yucadoo/polymorphic-fractal.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/yuca/polymorphic-fractal/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/yuca/polymorphic-fractal.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/yuca/polymorphic-fractal.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/yuca/polymorphic-fractal.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/yucadoo/polymorphic-fractal/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/yucadoo/polymorphic-fractal.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/yucadoo/polymorphic-fractal.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/yucadoo/polymorphic-fractal.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/yuca/polymorphic-fractal
-[link-travis]: https://travis-ci.org/yuca/polymorphic-fractal
-[link-scrutinizer]: https://scrutinizer-ci.com/g/yuca/polymorphic-fractal/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/yuca/polymorphic-fractal
-[link-downloads]: https://packagist.org/packages/yuca/polymorphic-fractal
-[link-author]: https://github.com/yuca
-[link-singleton-container]: https://github.com/yuca/singleton-container
+[link-packagist]: https://packagist.org/packages/yucadoo/polymorphic-fractal
+[link-travis]: https://travis-ci.org/yucadoo/polymorphic-fractal
+[link-scrutinizer]: https://scrutinizer-ci.com/g/yucadoo/polymorphic-fractal/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/yucadoo/polymorphic-fractal
+[link-downloads]: https://packagist.org/packages/yucadoo/polymorphic-fractal
+[link-author]: https://github.com/yucadoo
+[link-singleton-container]: https://github.com/yucadoo/singleton-container
 [link-contributors]: ../../contributors

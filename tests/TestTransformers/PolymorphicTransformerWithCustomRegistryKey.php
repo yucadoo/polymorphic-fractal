@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yuca\PolymorphicFractal\TestTransformers;
+namespace YucaDoo\PolymorphicFractal\TestTransformers;
 
-use Yuca\PolymorphicFractal\Transformer as PolymorphicTransformer;
+use YucaDoo\PolymorphicFractal\Transformer as PolymorphicTransformer;
 
 class PolymorphicTransformerWithCustomRegistryKey extends PolymorphicTransformer
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yuca\PolymorphicFractal;
+namespace YucaDoo\PolymorphicFractal;
 
 use Mouf\AliasContainer\AliasContainer;
 use League\Fractal\TransformerAbstract;

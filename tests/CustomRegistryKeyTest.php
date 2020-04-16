@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yuca\PolymorphicFractal;
+namespace YucaDoo\PolymorphicFractal;
 
 use Mouf\AliasContainer\AliasContainer;
 use League\Fractal\Manager;
@@ -11,8 +11,8 @@ use League\Fractal\Resource\Item;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\MockObject\MockObject;
 use Psr\Container\ContainerInterface;
-use Yuca\PolymorphicFractal\TestTransformers\PolymorphicTransformerWithCustomRegistryKey;
-use Yuca\PolymorphicFractal\TestTransformers\TransformerWithoutIncludes;
+use YucaDoo\PolymorphicFractal\TestTransformers\PolymorphicTransformerWithCustomRegistryKey;
+use YucaDoo\PolymorphicFractal\TestTransformers\TransformerWithoutIncludes;
 
 class CustomRegistryKeyTest extends TestCase
 {

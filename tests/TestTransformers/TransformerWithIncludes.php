@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yuca\PolymorphicFractal\TestTransformers;
+namespace YucaDoo\PolymorphicFractal\TestTransformers;
 
 /** Transformer with default and available includes used for testing */
 class TransformerWithIncludes extends TransformerWithoutIncludes

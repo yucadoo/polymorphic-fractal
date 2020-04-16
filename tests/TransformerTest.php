@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yuca\PolymorphicFractal;
+namespace YucaDoo\PolymorphicFractal;
 
 use Mouf\AliasContainer\AliasContainer;
 use League\Fractal\Manager;
@@ -11,10 +11,10 @@ use League\Fractal\Resource\Item;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\MockObject\MockObject;
 use Psr\Container\ContainerInterface;
-use Yuca\PolymorphicFractal\TestClasses\ClassA;
-use Yuca\PolymorphicFractal\TestClasses\ClassB;
-use Yuca\PolymorphicFractal\TestTransformers\TransformerWithIncludes;
-use Yuca\PolymorphicFractal\TestTransformers\TransformerWithoutIncludes;
+use YucaDoo\PolymorphicFractal\TestClasses\ClassA;
+use YucaDoo\PolymorphicFractal\TestClasses\ClassB;
+use YucaDoo\PolymorphicFractal\TestTransformers\TransformerWithIncludes;
+use YucaDoo\PolymorphicFractal\TestTransformers\TransformerWithoutIncludes;
 
 class TransformerTest extends TestCase
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yuca\PolymorphicFractal\TestTransformers;
+namespace YucaDoo\PolymorphicFractal\TestTransformers;
 
 use League\Fractal\TransformerAbstract;
 
